@@ -15,3 +15,17 @@
 .formlogin input {
     font-size: large;
 }
+
+#mainregistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.divregistro{
+    margin-bottom: 40px;
+    font-size:x-large;
+    
+}
