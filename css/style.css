@@ -1,5 +1,20 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos login */
+
 .bodylogin {
-    background-color: rgb(195, 229, 246);
+    background-color: rgb(62, 61, 61);
+}
+
+#mainlogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 100vh;
 }
 
 .formlogin {
@@ -7,16 +22,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20%;
+    padding: 5%;
     font-size: larger;
-    background-color: rgb(195, 229, 246);
+    background-color: rgb(157, 63, 51);
+    border-radius: 15%;
+.logologin {
+    border-radius: 100%;
+    height: 200px
 }
 
 .formlogin input {
     font-size: large;
 }
 
-#mainregistro{
+.btn {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+}
+
+/* estilos registro */
+
+#mainregistro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +59,29 @@
     padding: 30px;
 }
 
-.divregistro{
+.divregistro {
     margin-bottom: 40px;
-    font-size:x-large;
-    
+    font-size: x-large;
 }
+
+/* estilos product */
+
+#bodyproduct {
+    background-color: rgb(62, 61, 61);
+}
+
+#album{
+    width: 50px;
+    height: auto;
+}
+
+
+/* estilos search */
+
+
+
+/* estilos index */
+
+
+
+/* estilos  */
