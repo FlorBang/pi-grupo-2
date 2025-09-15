@@ -124,7 +124,7 @@
 }
 
 .header{
-    background-color: #722718;
+    background-color: #8e1717;
     display: flex;
     flex-direction: row;
     height: 150px;
@@ -180,4 +180,49 @@ list-style-type: none;
 
 
 
-/* estilos  */
+/* estilos  category*/
+
+.banner{
+display: flex;
+
+}
+
+.genre{
+display: flex;
+background-color: black;
+color: white;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+
+.albumes{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.portada{
+
+}
+
+.btncat{
+ background-color: rgb(62, 61, 61);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    border: #3f170f ;
+}
+
