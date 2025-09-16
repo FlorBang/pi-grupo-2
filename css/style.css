@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -62,7 +62,7 @@
     height: 100%;
 }
 
-.formregistro{
+.formregistro {
     padding: 100px;
     background-color: #722718;
     border-radius: 50px;
@@ -72,27 +72,27 @@
     padding: 80px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
 
 }
 
 .divregistro {
     margin-bottom: 40px;
-    font-size:xx-large;
+    font-size: xx-large;
     align-items: center;
     justify-content: center;
 
 }
 
-.registro{
+.registro {
     background-color: #927975;
     padding: 10px;
     font-size: xx-large;
 }
 
-.log_en_register{
-   font-size: 20px;
-   color: black;
+.log_en_register {
+    font-size: 20px;
+    color: black;
 
 }
 
@@ -102,7 +102,7 @@
     background-color: rgb(62, 61, 61);
 }
 
-#album{
+#album {
     width: 50px;
     height: auto;
 }
@@ -113,66 +113,66 @@
 
 
 /* estilos index */
-.logoheader{
+.logoheader {
     height: 120px;
     border-radius: 100%;
     align-self: center;
     margin-left: 10px;
-   margin-top: 10px;
-    
-  
+    margin-top: 10px;
+
+
 }
 
-.header{
+.header {
     background-color: #8e1717;
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 150px;
-    border-color: black;
-    border-style: double;
-    border-width: 15px;
+    border: 15px double rgb(170, 53, 53);
     justify-content: space-between;
-    
-}
-
-.navindex{
-flex-direction: row;
-display: flex;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 900;
-justify-content:space-between;
-align-items: center;
-padding: 5px;
-color: black;
-list-style-type: none;
-
+    padding: 8px 16px;
 
 }
 
-.loginheader{
+.navindex {
+    flex-direction: row;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    list-style-type: none;
+
+
+}
+
+.loginheader {
     margin-right: 20px;
 }
 
-.mainindex{
+.mainindex {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.tituloindex{
+.tituloindex {
     text-align: center;
 }
 
-.productosindex{
+.productosindex {
     display: flex;
     border-color: black;
     border-width: 5px;
-    border-style:ridge ;
+    border-style: ridge;
     width: 50%;
     flex-direction: column;
 }
 
-.viniloindex{
+.viniloindex {
     display: flex;
     justify-content: flex-end;
     width: 300px;
@@ -182,37 +182,66 @@ list-style-type: none;
 
 /* estilos  category*/
 
-.banner{
-display: flex;
+.banner {
+    width: 100%;
+    height: 220px;
+    background-image: url(../img/Banner\ category.png);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
 
 }
 
-.genre{
-display: flex;
-background-color: black;
-color: white;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-
-
-.albumes{
-
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-
-.portada{
+.banner h1 {
+    padding: 12px 124px;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
 
 }
 
-.btncat{
- background-color: rgb(62, 61, 61);
+.genre {
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.albumes {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0px 45px 0px;
+    max-width: 1200px;
+}
+
+.portada {
+    max-width: 280px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #b2a2a0;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin: 35px;
+    margin-right: 45px;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+}
+
+.btncat {
+    background-color: rgb(141, 33, 33);
     color: white;
     text-align: center;
     display: flex;
@@ -222,7 +251,7 @@ justify-content: center;
     font-weight: 700;
     margin-top: 20px;
     padding: 10px;
-    width: 100px;
-    border: #3f170f ;
+    width: 200px;
+    border: 8px double #ffffff;
+    text-decoration: none;
 }
-
