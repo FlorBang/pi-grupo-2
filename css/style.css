@@ -173,6 +173,16 @@
 
 }
 
+.login {
+    text-decoration: none;
+    color: white;
+}
+
+.register {
+    text-decoration: none;
+    color: white;
+}
+
 .navheader {
     margin: 10px;
     color: rgb(47, 33, 33);
@@ -269,9 +279,10 @@
 
 .banner h1 {
     padding: 120px 0px 0px 15px;
-    font-size: 40px;
     font-weight: 900;
     color: white;
+    font-size: 40px;
+
 }
 
 .genre {
@@ -282,7 +293,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    font
+    font-size: 20px;
+    height: 60px;
 }
 
 
@@ -294,6 +306,7 @@
     justify-content: center;
     margin: 15px 0px 45px 0px;
     max-width: 1200px;
+    font-size: normal;
 }
 
 .portada {
@@ -302,10 +315,8 @@
     background: white;
     border-radius: 12px;
     padding: 16px;
-    background-color: #b2a2a0;
-    margin-top: 35px;
-    margin-left: 50px;
-    margin: 35px;
+    background-color: rgb(232, 217, 189);
+   margin: 35px 30px 25px 20px;
     margin-right: 45px;
 }
 
@@ -317,7 +328,6 @@
 .btncat {
     background-color: rgb(141, 33, 33);
     color: white;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,6 +336,7 @@
     margin-top: 20px;
     padding: 10px;
     width: 200px;
-    border: 8px double #ffffff;
-    text-decoration: none;
+    border: 8px double white;
+    text-align: center;
+    margin: 20px 0px 0px 20px;
 }
