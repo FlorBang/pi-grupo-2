@@ -4,37 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bodylogin">
-    <main id="mainlogin">
-        <form action="./index.html" method="get" class="formlogin">
+<body id="bodyindex">
 
-            <img src="./img/logo.png" alt="logo de la marca" class="logologin">
-
-            <p id="sumate">¡Sumate a nuestra comunidad!</p>
-
+    <header class="header">
+        <a href="./index.html" class="borderLogo"><img src="./img/logo.png" alt="logo" class="logoheader"></a>
+        <nav class="navheader">
             <div>
-                <input type="email" name="emailuser" placeholder="Ingrese su Email">
+                <a href="./login.html" class="logYRegHeader">Login</a>
+            </div>
+            <div>
+                <a href="./register.html" class="logYRegHeader">Register</a>
             </div>
 
-            <div>
-                <input type="password" name="passuser" placeholder="Ingrese su contraseña">
-            </div>
+        </nav>
+    </header>
 
-            <div>
-                <button type="submit" class="btn">Ingresar</button>
-                
-            </div>
+    <section class="bannerindex">
+        <h1>The Vinyl Vault Records</h1>
+    </section>
 
-            <div>
-                <a href="./register.html" class="btn">No tengo cuenta</a>
-            </div>
+    <main class="main">
+        <aside class="navegador">
+            <h2 class="titulocat">Categorias</h2>
+            <nav class="lista">
+                <ul class="categoriaslist">
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/pop.png" alt="pop" class="iconos">Pop</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/rock.png" alt="rock" class="iconos">Rock</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/jazz.png" alt="jazz" class="iconos">Jazz</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/folklore.png" alt="folklore" class="iconos">Folkore
+                        </li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/clasica.png" alt="clasica" class="iconos">Clásica
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
 
-        </form>
+        <section class="seccionProductos">
+            <form action="./index.html" method="get" class="formlogin">
+
+                <img src="./img/logo.png" alt="logo de la marca" class="logologin">
+
+                <p id="sumate">¡Sumate a nuestra comunidad!</p>
+
+                <div>
+                    <input type="email" name="emailuser" placeholder="Ingrese su Email">
+                </div>
+
+                <div>
+                    <input type="password" name="passuser" placeholder="Ingrese su contraseña">
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">Ingresar</button>
+                </div>
+
+                <div>
+                    <a href="./register.html" class="btn" id="noTengoCuenta">No tengo cuenta</a>
+                </div>
+
+            </form>
+
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <section></section>
+        <section class="textoFooter">
+            <article>
+                <p class="integrantes"> Integrantes: Florencia Bang, Sofía Heine y Martina Vázquez</i></p>
+            </article>
+            <article>
+                <p class="redes"><img src="./img/logoIgVintage.png" alt="logoIg" class="logoIg">@Thevinylrecordstore</p>
+            </article>
+        </section>
+    </footer>
 </body>
 
 </html>

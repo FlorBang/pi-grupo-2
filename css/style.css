@@ -4,29 +4,25 @@
 
 /* estilos login */
 
-.bodylogin {
-    background-color: rgb(62, 61, 61);
-}
-
-#mainlogin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0px;
-    height: 100vh;
-}
-
 .formlogin {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5%;
+    padding: 3%;
     font-size: larger;
-    background-color: rgb(132, 35, 35);
-    border-radius: 5%;
+    background-color: #3b0a0f;
+    border-radius: 9%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-color: black;
+    border-width: 15px;
+}
 
+#sumate {
+    font-size: larger;
+    color: #edecea;
 }
 
 .logologin {
@@ -35,12 +31,13 @@
 }
 
 .formlogin input {
-    font-size: large;
+    font-size: larger;
+    background-color: #edecea;
 }
 
 .btn {
-    background-color: rgb(62, 61, 61);
-    color: white;
+    background-color: #edecea;
+    color: #722718;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -49,7 +46,14 @@
     font-weight: 700;
     margin-top: 20px;
     padding: 10px;
-    width: 100px;
+    width: 100%;
+    font-size: large;
+}
+
+#noTengoCuenta {
+    width: 100%;
+    display: flex;
+    justify-self: center;
 }
 
 /* estilos registro */
@@ -73,8 +77,6 @@
     padding: 80px;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
 }
 
 .divregistro {
@@ -99,22 +101,54 @@
 
 /* estilos product */
 
-#bodyproduct {
-    background-color: rgb(62, 61, 61);
-}
-
 #album {
-    width: 200px;
+    width: 30%;
     height: auto;
 }
 
+.detalles {
+    text-align: center;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: rgb(232, 217, 189);
+    margin: 35px 30px 25px 20px;
+    margin-top: 0%;
+    margin-right: 45px;
+}
+
+#tituloAlbum{
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: 2%;
+}
+
+#coleccion{
+    font-style: italic;
+    font-size: large;
+}
+
+.comprar{
+    background-color: rgb(141, 33, 33);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    border: 8px double white;
+    text-align: center;
+    margin: 20px 0px 0px 20px;
+}
 
 /* estilos search */
 
 
 
 /* estilos index */
-
 
 #bodyindex {
     display: flex;
@@ -133,7 +167,7 @@
     border-width: 20px;
 }
 
-.borderLogo{
+.borderLogo {
     border-color: #000000;
     border-width: 20px;
 }
@@ -147,7 +181,6 @@
     border-width: 5px;
     display: flex;
     border-radius: 10px;
-    
 }
 
 .bannerindex {
@@ -155,7 +188,6 @@
     margin-top: 20px;
     width: 100%;
     height: 220px;
-
 }
 
 .bannerindex h1 {
@@ -166,7 +198,6 @@
     font-family: playfair display;
 }
 
-
 .navheader {
     flex-direction: row;
     display: flex;
@@ -176,14 +207,12 @@
     list-style-type: none;
 }
 
-
-
-
-.logYRegHeader{
+.logYRegHeader {
     text-decoration: none;
     color: white;
     margin-right: 20px;
 }
+
 .navegador {
     display: flex;
     border-radius: 5%;
@@ -193,20 +222,19 @@
     box-sizing: border-box;
     width: 18%;
     border-style: double;
-    border-left: #0a0909;
-    border-bottom: #000000;
+    border-color: black;
     border-width: 15px;
     height: fit-content;
 }
 
-.titulocat{
+.titulocat {
     color: #ffffff;
     align-self: center;
     font-family: Raleway;
-
 }
+
 .categoriaelement {
-    background-color:#bdb0ae;
+    background-color: #bdb0ae;
     text-align: center;
     padding-top: 5px;
     margin-bottom: 10px;
@@ -216,7 +244,7 @@
     width: 150px;
 }
 
-.lista{
+.lista {
     display: flex;
     margin-right: 0;
     align-items: flex-start;
@@ -225,50 +253,49 @@
     justify-items: space-between;
 }
 
-
 .categoriaslist {
     list-style-type: none;
     color: rgb(27, 2, 2);
     width: 100%;
 }
 
-.iconos{
+.iconos {
     width: 20px;
     height: 20px;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     justify-content: space-between;
     border-radius: 5%;
     box-sizing: border-box;
-    
+
 }
 
-.seccionProductos{
+.seccionProductos {
     width: 88%;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     box-sizing: border-box;
-    }
+}
 
-.masVendidos{
+.masVendidos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.aleatorios{
+.aleatorios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     background-color: #3f170f;
@@ -276,12 +303,9 @@
     border-style: double;
     border-color: #927975;
     height: 100px;
-    
-
-    
 }
 
-.textoFooter{
+.textoFooter {
     color: #ffffff;
     margin-left: 10px;
     display: flex;
@@ -289,27 +313,26 @@
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
 
-
-
-.redes{
+.redes {
     margin-right: 20px;
     font-size: large;
     font-family: Cormorant garam;
 }
 
-.integrantes{
+.integrantes {
     font-size: large;
 }
 
 
-.logoIg{
+.logoIg {
     width: 34px;
     height: 18px;
-    
+
 }
+
 /* estilos  category*/
 
 .banner {
@@ -362,7 +385,7 @@
     border-radius: 12px;
     padding: 16px;
     background-color: rgb(232, 217, 189);
-   margin: 35px 30px 25px 20px;
+    margin: 35px 30px 25px 20px;
     margin-right: 45px;
 }
 

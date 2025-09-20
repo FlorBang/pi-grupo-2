@@ -1,56 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalles del producto</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="bodyproduct">
-    <p>The Life of a Showgirl</p>
-    
-    <p>Portofino Orange Glitter Vynil (Edición Coleccionable)</p>
 
-    <img src="./img/TLOAS.webp" alt="portada del albúm The Life of a Showgirl" id="album">
+<body id="bodyindex">
 
-    <img src="./img/contratapa.TLOAS.webp" alt="contratapa de TLOAS" id="album">
+    <header class="header">
+        <a href="./index.html" class="borderLogo"><img src="./img/logo.png" alt="logo" class="logoheader"></a>
+        <nav class="navheader">
+            <div>
+                <a href="./login.html" class="logYRegHeader">Login</a>
+            </div>
+            <div>
+                <a href="./register.html" class="logYRegHeader">Register</a>
+            </div>
 
-    <p>Precio: $60.000</p>
+        </nav>
+    </header>
 
-    <p>Categoría: Pop</p>
+    <section class="bannerindex">
+        <h1>The Vinyl Vault Records</h1>
+    </section>
 
-    <p>Stock: Quedan 3, apurate!</p>
-
-    <p>Detalles:</p>
-
-    <ul>
-        <li>12 canciones</li>
-        <li>Vinilo translúcido naranja con brillos dorados, una pieza única para coleccionistas y fans.</li>
-        <li>Carpeta doble gatefold con diseño exclusivo en portada y contratapa.</li>
-        <li>Fotografía tamaño completo de Taylor en el interior de la carpeta desplegable.</li>
-        <li>Panel desplegable doble cara: incluye un poema inédito escrito por Taylor en un lado y una tira de 4 fotos exclusivas en el otro.</li>
-        <li>Fundas de álbum coleccionables, con fotos nunca antes vistas y las letras completas del disco.</li>
-    </ul>
-
-    <p>Tracklist:</p>
-
-    <ol>
-        <li>The Fate of Ophelia</li>
-        <li>Elizabeth Taylor</li>
-        <li>Opalite</li>
-        <li>Father Figure</li>
-        <li>Eldest Daughter</li>
-        <li>Ruin the Friendship</li>
-        <li>Actually Romantic</li>
-        <li>Wi$h Li$t</li>
-        <li>Wood</li>
-        <li>CANCELLED!</li>
-        <li>Honey</li>
-        <li>The Life of a Showgirl (feat. Sabrina Carpenter)</li>
-    </ol>
-
-    <p>Un artículo de colección imprescindible para los verdaderos swifties ❤️‍🔥🎶💿</p>
+    <main class="main">
+        <aside class="navegador">
+            <h2 class="titulocat">Categorías</h2>
+            <nav class="lista">
+                <ul class="categoriaslist">
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/pop.png" alt="pop" class="iconos">Pop</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/rock.png" alt="rock" class="iconos">Rock</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/jazz.png" alt="jazz" class="iconos">Jazz</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/folklore.png" alt="folklore" class="iconos">Folkore
+                        </li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/clasica.png" alt="clasica" class="iconos">Clásica
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
 
 
+        <section class="seccionProductos">
+            <article class="detalles">
+
+            <p id="tituloAlbum">The Life of a Showgirl</p>
+
+            <p id="coleccion">Portofino Orange Glitter Vynil (Edición Coleccionable)</p>
+
+            <img src="./img/TLOAS.webp" alt="portada del albúm The Life of a Showgirl" id="album">
+
+            <img src="./img/contratapa.TLOAS.webp" alt="contratapa de TLOAS" id="album">
+
+            <p>Precio: $60.000</p>
+
+            <p>Categoría: Pop</p>
+
+            <p>Stock: Quedan solo 3 unidades, ¡apurate!</p>
+
+            <p>Tracklist:</p>
+
+            <ol>
+                <li>The Fate of Ophelia</li>
+                <li>Elizabeth Taylor</li>
+                <li>Opalite</li>
+                <li>Father Figure</li>
+                <li>Eldest Daughter</li>
+                <li>Ruin the Friendship</li>
+                <li>Actually Romantic</li>
+                <li>Wi$h Li$t</li>
+                <li>Wood</li>
+                <li>CANCELLED!</li>
+                <li>Honey</li>
+                <li>The Life of a Showgirl (feat. Sabrina Carpenter)</li>
+            </ol>
+
+            <a href="#" class="comprar">Comprar</a>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section></section>
+        <section class="textoFooter">
+            <article>
+                <p class="integrantes"> Integrantes: Florencia Bang, Sofía Heine y Martina Vázquez</i></p>
+            </article>
+            <article>
+                <p class="redes"><img src="./img/logoIgVintage.png" alt="logoIg" class="logoIg">@Thevinylrecordstore</p>
+            </article>
+        </section>
+    </footer>
 </body>
+
 </html>
