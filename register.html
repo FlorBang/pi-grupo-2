@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body class="bodyRegister">
-<header class="header">
-    <a href="./index.html" class="borderLogo"><img src="./img/logo.png" alt="logo" class="logoheader"></a>
-    <nav class="navheader">
-        <div>
-            <a href="./login.html" class="logYRegHeader">Login</a>
+
+    <header class="header">
+        <a href="./index.html" class="borderLogo"><img src="./img/logo.png" alt="logo" class="logoheader"></a>
+
+        <div class="searchsection">
+            <input type="text" name="buscar" placeholder="Buscar género, artista y más..." class="searchbox">
+            <a href="./search-results.html" class="btnsearch">Buscar</a>
         </div>
-        <div>
-            <a href="./register.html" class="logYRegHeader">Register</a>
-        </div>
-                
-    </nav>
-</header>  
+
+        <nav class="navheader">
+            <div>
+                <a href="./login.html" class="logYRegHeader">Login</a>
+            </div>
+
+            <div>
+                <a href="./register.html" class="logYRegHeader">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
     <section class="bannerindex">
         <h1>The Vinyl Vault Records</h1>
     </section>
-        
+
     <main class="main">
         <aside class="navegador">
             <h2 class="titulocat">Categorías</h2>
             <nav class="lista">
                 <ul class="categoriaslist">
-                    <a href="./category.html"><li class="categoriaelement"><img src="./img/pop.png" alt="pop" class="iconos">Pop</li></a>
-                    <a href="./category.html"><li class="categoriaelement"><img src="./img/rock.png" alt="rock" class="iconos">Rock</li></a>
-                    <a href="./category.html"><li class="categoriaelement"><img src="./img/jazz.png" alt="jazz" class="iconos">Jazz</li></a>
-                    <a href="./category.html"><li class="categoriaelement"><img src="./img/folklore.png" alt="folklore" class="iconos">Folkore</li></a>
-                    <a href="./category.html"><li class="categoriaelement"><img src="./img/clasica.png" alt="clasica" class="iconos">Clásica</li></a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/pop.png" alt="pop" class="iconos">Pop</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/rock.png" alt="rock" class="iconos">Rock</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/jazz.png" alt="jazz" class="iconos">Jazz</li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/folklore.png" alt="folklore" class="iconos">Folkore
+                        </li>
+                    </a>
+                    <a href="./category.html">
+                        <li class="categoriaelement"><img src="./img/clasica.png" alt="clasica" class="iconos">Clásica
+                        </li>
+                    </a>
                 </ul>
             </nav>
-        </aside>  
+        </aside>
 
 
         <section class="seccionProductos">
-        <form action="./login.html" method="get" class="formregister">
+            <form action="./login.html" method="get" class="formregister">
 
-            <img src="./img/logo.png" alt="logo de la marca" class="logologin">
-            <p class="textoRegister">¡Sumate a nuestra comunidad!</p>
-            <div><input type="email" name="mail" placeholder="Ingrese su email" class="divRegistro"></div>
+                <img src="./img/logo.png" alt="logo de la marca" class="logologin">
+                <p class="textoRegister">¡Sumate a nuestra comunidad!</p>
+                <div><input type="email" name="mail" placeholder="Ingrese su email" class="divRegistro"></div>
 
-            <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña" class="divRegistro"></div>
+                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña" class="divRegistro">
+                </div>
 
-            <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña nuevamente" class="divRegistro"></div>
+                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña nuevamente"
+                        class="divRegistro"></div>
 
-            <div><button type="submit" class="btn">Registrarme</button></div>
+                <div><button type="submit" class="btn">Registrarme</button></div>
 
-            <div><a href="./img/login.html" class="textoRegister">Ya tengo cuenta</a></div>
-        </form>
+                <div><a href="./img/login.html" class="textoRegister">Ya tengo cuenta</a></div>
+            </form>
         </section>
     </main>
     <footer class="footer">
         <section class="textoFooter">
-            <article><p class="integrantes"> Integrantes: Florencia Bang, Sofía Heine y Martina Vázquez</i></p></article>
-            <article><p class="redes"><img src="./img/logoIgVintage.png" alt="logoIg" class="logoIg">@Thevinylrecordstore</p></article>
+            <article>
+                <p class="integrantes"> Integrantes: Florencia Bang, Sofía Heine y Martina Vázquez</i></p>
+            </article>
+            <article>
+                <p class="redes"><img src="./img/logoIgVintage.png" alt="logoIg" class="logoIg">@Thevinylrecordstore</p>
+            </article>
         </section>
     </footer>
 </body>
+
 </html>
