@@ -4,6 +4,10 @@
 
 /* estilos login */
 
+
+#bodylogin {
+    background-color: #faf3e3;
+}
 .formlogin {
     display: flex;
     justify-content: center;
@@ -58,6 +62,9 @@
 
 /* estilos registro */
 
+#bodyregister{
+    background-color: #faf3e3;
+}
 .formregister{
     display: flex;
     justify-content: center;
@@ -94,6 +101,9 @@
 }
 
 /* estilos product */
+#bodyproduct{
+    background-color: #faf3e3;
+}
 
 #album {
     width: 30%;
@@ -188,6 +198,10 @@
 
 /* estilos search */
 
+#bodysearch{
+    background-color: #faf3e3;
+}
+
 .noresult{
     display: none;
 }
@@ -225,10 +239,7 @@
 /* estilos index */
 
 #bodyindex {
-    display: flex;
-    flex-direction: column;
     background-color: #faf3e3;
-    background-size: cover;
 }
 
 .logoheader {
@@ -299,6 +310,7 @@
     border-color: black;
     border-width: 15px;
     height: fit-content;
+    margin-top: 20px;
 }
 
 .titulocat {
@@ -347,7 +359,6 @@
     justify-content: space-between;
     border-radius: 5%;
     box-sizing: border-box;
-
 }
 
 .seccionProductos {
@@ -356,18 +367,21 @@
     flex-direction: column;
     margin-left: 20px;
     box-sizing: border-box;
+    
 }
 
 .masVendidos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .aleatorios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .descripcion{
@@ -378,7 +392,6 @@ text-align: left;
 .precio{
     background-color: #a6a3a2;
     padding: 5px;
-    width: 270px;
     color: white;
     display: flex;
     justify-content: center;
@@ -481,7 +494,7 @@ text-align: left;
 }
 
 .portada {
-    max-width: 230px;
+    width: 250px;
     text-align: center;
     background: white;
     border-radius: 12px;
@@ -489,6 +502,10 @@ text-align: left;
     background-color: rgb(232, 217, 189);
     margin: 35px 30px 25px 20px;
     margin-right: 45px;
+}
+
+.portada h2{
+    font-size: medium;
 }
 
 .portada img {
