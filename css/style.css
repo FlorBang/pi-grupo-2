@@ -238,9 +238,9 @@
 
 /* estilos index */
 
-#bodyindex {
+    #bodyindex {
     background-color: #faf3e3;
-}
+    }
 
 .logoheader {
     height: 120px;
@@ -335,6 +335,7 @@
     width: 100%;
     list-style-position: inside;
 }
+
 .categoriaslist{
     padding-left: 0;
 }
@@ -439,6 +440,9 @@ text-align: left;
 
 }
 
+
+
+
 /* estilos  category*/
 
 #bodycat{
@@ -517,14 +521,233 @@ text-align: left;
     background-color: rgb(141, 33, 33);
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
     text-decoration: none;
     font-weight: 700;
     margin-top: 20px;
     padding: 10px;
     width: 150px;
     border: 8px double white;
-    text-align: center;
-    margin: 20px 0px 0px 20px;
+    width: fit-content;
+
 }
+
+/* estilos  media index*/
+@media (max-width: 460px){
+    .header{
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navheader{
+        width: fit-content;
+        font-size: xx-small;
+        justify-content: center;
+        width: 20%;
+    }
+
+   
+    .searchsection{
+        width: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 30px;
+        align-items: center;
+        padding: 10px;
+        margin-top: 0px;
+        margin-left: 5px;
+
+    }
+
+    .logoheader{
+        width: 100%;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .borderLogo{
+        width: 10%;
+    }
+
+    .searchbox{
+        width: 80%;
+        font-size: xx-small;
+        height: 20px;
+        
+        
+    }
+    .btnsearch{
+        width: 20%;
+        font-size: xx-small;
+        padding: 0;
+        text-align: center;
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .logYRegHeader{
+        margin: 5px;
+    }
+
+    .bannerindex h1{
+        font-size: small;
+        text-align: center;
+        background-color: #927975;
+        
+    }
+
+    .bannerindex{
+       height: fit-content;
+    }
+    #bodyindex h1{
+        font-size: small;
+    }
+
+   .titulocat h2{
+        font-size: small;
+   }
+   
+    .masVendidos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    .btncat {
+    background-color: rgb(141, 33, 33);
+    color: white;
+    display: flex;
+    justify-self: center;
+    text-decoration: none;
+    font-size:xx-small;
+    margin-top: 5px;
+    padding: 3px;
+    width: fit-content;
+    border: 3px double white;
+    }
+
+    .portada{
+    height: fit-content;
+    background: white;
+    border-radius: 12px;
+    background-color: rgb(232, 217, 189);
+    width: 20%;
+    margin: 2px;
+    padding: 5%;
+    justify-content: center;
+    }
+
+    .portada h2{
+    font-size: 30%;
+    }
+
+    .portada p{
+        font-size: 20%;
+    }
+
+    .portada img {
+    width: 50%;
+    height: 30px;
+    }
+
+    .lista{
+        width: 100%;
+    }
+
+    .navegador {
+    border-radius: 3%;
+    width: 20%;
+    border-style: double;
+    border-width: 8px;
+    margin-top: 5px;
+    }   
+
+    .titulocat {
+    color: #ffffff;
+    align-self: center;
+    font-family: Raleway;
+    font-size: x-small;
+    }
+
+
+    .categoriaelement {
+    padding-top: 3px;
+    margin-bottom: 10px;
+    height: 10px;
+    font-size: xx-small;
+    width: 100%;
+    }
+
+    .categoriaslist a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(152, 29, 29);
+    font-weight: bold;
+    }
+
+    .iconos {
+    width: 5px;
+    height: 5px;
+    }
+
+    .footer {
+    height: 20px;
+    border-width: 5px;
+    margin: 0%;
+    }
+
+    .textoFooter{
+        margin: 2px;
+    }
+
+
+
+    .redes {
+    margin-right: 5px;
+    font-size: 40%;
+    font-family: Cormorant garam;
+    }   
+
+    .integrantes {
+    font-size: 20%;
+    }
+
+
+    .logoIg {
+    width: 20px;
+    height: 12px;
+    margin-top: 3px;
+    }   
+
+    .formregister{
+        width: 70%;
+        height: 200px;
+        padding: 10px;
+    }
+    .divRegistro{
+        width: 100%;
+        font-size: xx-small;
+    }
+
+    .textoRegister{
+        font-size: small;
+    }
+
+    .logologin{
+        width: 25%;
+        height: 45px;
+    }
+
+    .btn{
+        width: 100%;
+        height: 10px;
+        font-size: x-small;
+    }
+
+    .textoRegister{
+        font-size: xx-small;
+    }
+    }
