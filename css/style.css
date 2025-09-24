@@ -81,12 +81,12 @@
     border-width: 15px;
 }
 
-
 .divRegistro {
-    font-size: x-large;
+    font-size: larger;
     align-items: center;
     justify-content: center;
     width: 450px;
+    margin: 10px;
 }
 
 .registro {
@@ -409,7 +409,7 @@ text-align: left;
     border-width: 15px;
     border-style: double;
     border-color: #927975;
-    height: 100px;
+    height: 80px;
 }
 
 .textoFooter {
@@ -417,7 +417,7 @@ text-align: left;
     margin-left: 10px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     height: 100%;
     justify-content: space-between;
@@ -532,8 +532,8 @@ text-align: left;
 
 }
 
-/* estilos  media index*/
-@media (max-width: 460px){
+/* estilos media para todos los html*/
+@media (max-width: 420px){
     .header{
         height: fit-content;
         display: flex;
@@ -545,8 +545,7 @@ text-align: left;
         justify-content: center;
         width: 20%;
     }
-
-   
+ 
     .searchsection{
         width: 70%;
         display: flex;
@@ -556,7 +555,6 @@ text-align: left;
         padding: 10px;
         margin-top: 0px;
         margin-left: 5px;
-
     }
 
     .logoheader{
@@ -593,7 +591,6 @@ text-align: left;
         font-size: small;
         text-align: center;
         background-color: #927975;
-        
     }
 
     .bannerindex{
@@ -694,25 +691,24 @@ text-align: left;
     }
 
     .footer {
-    height: 20px;
+    height: 40px;
     border-width: 5px;
     margin: 0%;
+    margin-top: 5%;
     }
 
     .textoFooter{
         margin: 2px;
     }
 
-
-
     .redes {
     margin-right: 5px;
-    font-size: 40%;
+    font-size: 50%;
     font-family: Cormorant garam;
     }   
 
     .integrantes {
-    font-size: 20%;
+    font-size: 60%;
     }
 
 
@@ -749,5 +745,70 @@ text-align: left;
 
     .textoRegister{
         font-size: xx-small;
+    }
+
+    .detalles{
+        width: 90%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #tituloAlbum{
+        font-size: large;
+    }
+
+    #coleccion{
+        font-size: smaller;
+    }
+
+    #album{
+        width: 40%;
+    }
+
+    .detallesP{
+        font-size: x-small;
+    }
+
+    #tracklist{
+        font-size: x-small;
+        padding-left: 0%;
+    }
+
+    #tags{
+        font-size: x-small;
+        padding-left: 0%;
+    }
+
+    .comprar{
+        font-size: small;
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+
+    #tituloReviews{
+        font-size: larger;
+        margin-left: 0%;
+    }
+
+    .reviews{
+        margin-left: 0%;
+        margin-right: 3%;
+        margin-bottom: 5%;
+    }
+
+    .reviews img{
+        width: 15%;
+        height: fit-content;
+    }
+
+    #usuarioreviews{
+        font-size: small;
+    }
+
+    .reviews p{
+        font-size: small;
+        margin: 5px;
     }
     }
