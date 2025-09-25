@@ -9,7 +9,7 @@
     background-color: #faf3e3;
 }
 
-.formlogin {
+.formlogyreg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
     height: 200px
 }
 
-.formlogin input {
+.formlogyreg input {
     font-size: larger;
     background-color: #edecea;
 }
@@ -55,32 +55,28 @@
     font-size: large;
 }
 
-#noTengoCuenta {
+.btnlogyreg{
     width: 100%;
     display: flex;
     justify-self: center;
+    background-color: #edecea;
+    color: #722718;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: large;
 }
 
 /* estilos registro */
 
 #bodyregister {
     background-color: #faf3e3;
-}
-
-.formregister {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3%;
-    font-size: larger;
-    background-color: #3b0a0f;
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    border-style: double;
-    border-color: black;
-    border-width: 15px;
 }
 
 .divRegistro {
@@ -312,7 +308,6 @@
     border-color: black;
     border-width: 15px;
     height: fit-content;
-    margin-top: 20px;
 }
 
 .titulocat {
@@ -384,7 +379,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .descripcion {
@@ -511,7 +506,7 @@
 }
 
 .portada h2 {
-    font-size: medium;
+    font-size: large;
 }
 
 .portada img {
@@ -536,6 +531,11 @@
 
 /* estilos media para todos los html */
 @media (max-width: 420px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
     .header {
         height: fit-content;
         display: flex;
@@ -574,8 +574,6 @@
         width: 80%;
         font-size: xx-small;
         height: 20px;
-
-
     }
 
     .btnsearch {
@@ -632,11 +630,11 @@
     }
 
     .portada {
-        height: fit-content;
         background: white;
         border-radius: 12px;
         background-color: rgb(232, 217, 189);
-        width: 20%;
+        width: 30%;
+        height: 140px;
         margin: 2px;
         padding: 5%;
         justify-content: center;
@@ -657,6 +655,7 @@
 
     .lista {
         width: 100%;
+        justify-content: space-around;
     }
 
     .lista li{
@@ -665,7 +664,7 @@
 
     .navegador {
         border-radius: 3%;
-        width: 20%;
+        width: 100%;
         border-style: double;
         border-width: 8px;
         margin-top: 5px;
@@ -675,16 +674,19 @@
         color: #ffffff;
         align-self: center;
         font-family: Raleway;
-        font-size: x-small;
+        font-size: medium;
     }
 
 
     .categoriaelement {
         padding-top: 3px;
         margin-bottom: 10px;
-        height: 10px;
-        font-size: xx-small;
-        width: 100%;
+        height: 15px;
+        width: 70%;
+        display: flex;
+        align-self: center;
+        margin-left: 10px;
+        font-size: small;
     }
 
     .categoriaslist a {
@@ -692,11 +694,17 @@
         text-decoration: none;
         color: rgb(152, 29, 29);
         font-weight: bold;
+        width: 50%;
+    }
+
+    .categoriaslist{
+        display: flex;
+        flex-direction: row;
     }
 
     .iconos {
-        width: 5px;
-        height: 5px;
+        width: 10px;
+        height: 10px;
     }
 
     .footer {
@@ -831,11 +839,13 @@
     }
 
     .seccionProductos{
-         display: flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
+        justify-self: center;
+        margin-left: 0%;
     }
 
     .searchbox{
