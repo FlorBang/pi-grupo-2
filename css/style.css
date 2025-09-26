@@ -266,6 +266,7 @@
     margin-top: 20px;
     width: 100%;
     height: 220px;
+    margin-bottom: 3%;
 }
 
 .bannerindex h1 {
@@ -296,7 +297,6 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: #3b0a0f;
-    box-sizing: border-box;
     width: 20%;
     border-style: double;
     border-color: black;
@@ -348,27 +348,32 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    justify-content: space-between;
     border-radius: 5%;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .seccionProductos {
-    width: 80%;
+    width: 76%;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    box-sizing: border-box;
-
+    align-content: center;
+    margin-right: 0;
 }
 
+.seccionProductos h2 {
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
 
 .aleatoriosymasvendidos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 40px;
 }
 
 .descripcion {
@@ -486,7 +491,7 @@
     margin-right: 45px;
 }
 
-.portada h2 {
+.portada h3 {
     font-size: large;
 }
 
@@ -804,6 +809,7 @@
         margin: 0%;
         margin-left: 0%;
         margin-right: 0%;
+        margin-top: 5%;
     }
 
     #tituloAlbum {
@@ -848,6 +854,7 @@
         margin-left: 0%;
         margin-right: 3%;
         margin-bottom: 5%;
+        align-self: center;
     }
 
     .reviews img {
