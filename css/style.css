@@ -104,6 +104,9 @@
 .detalles {
     text-align: center;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     background-color: rgb(232, 217, 189);
     margin: 0px 30px 25px 20px;
@@ -122,7 +125,16 @@
 }
 
 #tracklist {
-    list-style-position: inside;
+    align-self: center;
+    width: fit-content;
+
+}
+#tracklist  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }
 
 #tags li {
@@ -265,6 +277,7 @@
     border-width: 5px;
     display: flex;
     border-radius: 10px;
+    margin-right: 5px;
 }
 
 .bannerindex {
@@ -281,14 +294,22 @@
     background: rgba(0, 0, 0, 0.2);
     color: white;
 }
+.navheader{
+    align-self: center;
 
-.navheader {
+}
+
+.navheader ul {
     flex-direction: row;
     display: flex;
     font-weight: 900;
     align-items: center;
     padding: 5px;
+}
+
+.navheader li{
     list-style-type: none;
+
 }
 
 .logYRegHeader {
@@ -324,13 +345,13 @@
 .categoriaelement {
     background-color: #bdb0ae;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-bottom: 10px;
     font-family: Cormorant garam;
     height: 40px;
     font-size: large;
     width: 100%;
-    list-style-position: inside;
+    list-style-type: none;
 }
 
 .categoriaslist {
@@ -531,30 +552,48 @@
         height: fit-content;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .navheader {
         width: fit-content;
         font-size: xx-small;
         justify-content: center;
-        width: 20%;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
     }
 
+    .navheader ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navheader ul li{
+        padding: 5px;
+        font-size: small;
+    }
+
+    .bannerindex{
+        display: none;
+    }
+  
     .searchsection {
-        width: 70%;
+        width: 80%;
         display: flex;
         flex-wrap: nowrap;
-        height: 30px;
-        align-items: center;
-        padding: 10px;
-        margin-top: 0px;
-        margin-left: 5px;
+        height: 50px;
+        align-self: center;
+        margin-top: 10px;
+        padding: 0px;
+        margin: 0px;
     }
 
     .logoheader {
-        width: 100%;
-        height: 30px;
-        margin-right: 5px;
+        width: 150%;
+        height: auto;
+        margin-right: 10px;
     }
 
     .borderLogo {
@@ -562,22 +601,22 @@
     }
 
     .searchbox {
-        width: 80%;
-        font-size: xx-small;
-        height: 20px;
+        width: 230px;
+        font-size: small;
+        height: 40px;
     }
 
     .btnsearch {
-        width: 20%;
-        font-size: xx-small;
-        padding: 0;
+        width: 50x;
+        font-size: small;
         text-align: center;
         padding: 5px;
         margin-left: 5px;
+        height: 48px;
     }
 
     .logYRegHeader {
-        margin: 5px;
+       margin-right: 2px;
     }
 
     .bannerindex h1 {
@@ -626,9 +665,9 @@
         display: flex;
         justify-self: center;
         text-decoration: none;
-        font-size: xx-small;
+        font-size: small;
         margin-top: 5px;
-        padding: 3px;
+        padding: 5px;
         width: fit-content;
         border: 3px double white;
     }
@@ -637,12 +676,13 @@
         background: white;
         border-radius: 12px;
         background-color: rgb(232, 217, 189);
-        width: 30%;
-        height: 250px;
+        width: 50%;
         margin: 2px;
+        margin-bottom: 20px;
         padding: 5%;
         justify-content: center;
         align-content: center;
+
     }
 
     .portada h2 {
@@ -652,17 +692,14 @@
 
     .portada img {
         width: 75%;
-        height: 70px;
+        height: 100px
     }
 
     .descripcion {
-        font-size: xx-small;
+        font-size: small;
     }
 
-    .lista {
-        width: 100%;
-        justify-content: space-around;
-    }
+   
 
     .lista li {
         padding-bottom: 3px;
@@ -670,10 +707,12 @@
 
     .navegador {
         border-radius: 3%;
-        width: 100%;
+        width: 90%;
+        align-self: center;
         border-style: double;
         border-width: 8px;
         margin-top: 5px;
+       
     }
 
     .titulocat {
@@ -688,13 +727,14 @@
         padding-right: 5px;
         margin-bottom: 10px;
         height: 15px;
-        width: 70%;
-        display: flex;
+        width: 100%;
         justify-content: center;
         align-self: center;
-        margin-left: 10px;
         font-size: small;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+
 
     .categoriaslist a {
         list-style-type: none;
@@ -706,7 +746,7 @@
 
     .categoriaslist {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .banner {
@@ -727,7 +767,7 @@
     }
 
     .precio {
-        font-size: x-small;
+        font-size: small;
     }
 
     .iconos {
@@ -846,17 +886,18 @@
     .comprar {
         font-size: small;
         width: 40%;
-        margin-left: 25%;
         margin-top: 0%;
     }
 
     #tituloReviews {
         font-size: larger;
         margin-left: 0%;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
     .reviews {
-        margin-left: 0%;
+        margin-left: 3%;
         margin-right: 3%;
         margin-bottom: 5%;
         align-self: center;
@@ -897,14 +938,12 @@
 
     }
 
-    .searchbox {
-        width: 190px;
+    .seccionProductos h2{
+        margin-left: 0%;
+        margin-top: 15px;
     }
 
-    .btnsearch {
-        width: 35px;
-        padding: 7px 0px;
-    }
+
 
     .busqueda {
         font-size: smaller;
