@@ -215,14 +215,20 @@
     font-weight: light;
     font-size: small;
     padding: 17px 5px;
+    margin-left: 5px;
+ 
+    text-align: center;
 }
 
 .searchsection {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 
 .masVendidos{
-        display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -359,7 +365,7 @@
     flex-direction: column;
     margin-left: 20px;
     align-content: center;
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .seccionProductos h2 {
@@ -446,6 +452,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 3%;
 
 }
 
@@ -476,8 +483,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 40px 0px 50px;
-    width: 75%;
 }
 
 .portada {
