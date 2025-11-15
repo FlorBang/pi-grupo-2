@@ -395,7 +395,14 @@
     margin-top: 5px;
 }
 
-.aleatoriosymasvendidos {
+.Aleatorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Masvendidos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
