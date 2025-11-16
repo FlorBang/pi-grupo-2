@@ -1,6 +1,4 @@
-// no se detiene el envío del formulario
-
-let formulario = document.querySelector("form");			
+let formulario = document.querySelector(".formlogyreg");			
 let camposForm = document.querySelectorAll(".camposForm");
 
 console.log(camposForm);
@@ -12,15 +10,15 @@ formulario.addEventListener('submit', function (event) {
         const element = camposForm[index];
         
         if (element.value === "") {
-            element.placeholder = "Completa este campo";
+            element.placeholder = "Complete este campo";
             return;
         } 
+    }
 
-        if (camposForm[1].value < 6) {
+    if (camposForm[1].value.length < 6) {
             alert("La contraseña debe tener al menos 6 caracteres");
             return;
         }
-    }
 
     // session storage
     let user = {
