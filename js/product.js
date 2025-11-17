@@ -38,7 +38,6 @@ fetch(url)
         categoria.innerText += ` ${data.category}`;
         stock.innerText += ` ${data.stock} unidades`;
         tags.innerText += ` ${data.tags}`;
-
         let arrayReviews = data.reviews;
         let reviews = "";
 

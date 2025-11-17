@@ -20,7 +20,7 @@ fetch(url)
 
         for (let i = 0; i < categorias.length; i++) {
             const element = categorias[i];
-            catmod += `<li><a href="./category.html" class="categoriaelement">${element}</a></li>`
+            catmod += `<li><a href="./category.html?id=${element.id}" class="categoriaelement">${element}</a></li>`
 
 
             listaCategorias.innerHTML = catmod;
@@ -46,6 +46,7 @@ fetch(url2)
 
     .then(function (data) {
         let products = data.products;
+        console.log(products)
 
         let contenido1 = ""
         let contenido2= ""
@@ -59,16 +60,18 @@ fetch(url2)
                             <img src="${element.images[0]}">
                             <p class="descripcion">${element.description}</p>
                             <p class="precio">$${element.price}</p>
+                            <a href="./product.html?id=${element.id}" class="btncat">Ver detalle</a>
                         
                             </article>`
                 sectionaleatorios.innerHTML = contenido1
 
-            } else if (element.category == "groceries") {
+            } else if (element.category == "mobile-accessories") {
                 contenido2 += `<article class="portada">
                             <p>${element.title}</p>
                             <img src="${element.images[0]}">
                             <p class="descripcion">${element.description}</p>
                             <p class="precio">$${element.price}</p>
+                            <a href="./product.html?id=${element.id}" class="btncat">Ver detalle</a>
                         
                             </article>`
                 sectionmasvendidos.innerHTML = contenido2
