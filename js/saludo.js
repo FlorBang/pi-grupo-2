@@ -11,5 +11,5 @@ if (dataObj) {
     saludo.innerText = `Bienvenido ${dataObj.email}`;
 
     lista.innerHTML = ` <li><p>Bienvenido ${dataObj.email}</p></li>
-                        <li><a class="logout" href="./login.html">Logout</a></li>`;
+                        <li><a class="logout" href="./index.html">Logout</a></li>`;
 }

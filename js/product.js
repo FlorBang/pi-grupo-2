@@ -1,3 +1,39 @@
+// aside
+
+let urlAside = 'https://dummyjson.com/products/category-list';
+
+// 
+
+let listaCategorias = document.querySelector(".categoriaslist");
+
+// 
+
+fetch(urlAside)
+    .then(function (response) {
+        return response.json();
+
+    })
+
+    .then(function (data) {
+        let categorias = data;
+        let catmod = "";
+
+        for (let i = 0; i < categorias.length; i++) {
+            const element = categorias[i];
+            catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`
+            console.log(element);
+            
+
+            listaCategorias.innerHTML = catmod;
+
+        }
+    })
+
+    .catch(function (error) {
+        console.log("Error: " + error);
+
+    })
+
 //recuperar QS
 
 let qs = location.search;
@@ -36,6 +72,7 @@ fetch(url)
         precio.innerText += ` ${data.price}`;
         fotoProducto.src = `${data.images[0]}`;
         categoria.innerText += ` ${data.category}`;
+        categoria.href += `${data.category}`;
         stock.innerText += ` ${data.stock} unidades`;
         tags.innerText += ` ${data.tags}`;
         let arrayReviews = data.reviews;
