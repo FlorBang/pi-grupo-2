@@ -63,11 +63,10 @@ fetch(url)
             productos += `
                 <article class="portada">
                     <p>${element.title}</p>
-                    <a href="./product.html?id=${element.id}">
-                        <img src="${element.images[0]}" alt="${element.title}">
-                    </a>
+                    <img src="${element.images[0]}" alt="${element.title}">
                     <p class="descripcion">${element.description}</p>
                     <p class="precio">$${element.price}</p>
+                    <a href="./product.html?id=${element.id}" class="btncat">Ver detalle</a>
                 </article>
             `;
         }

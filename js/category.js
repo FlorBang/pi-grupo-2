@@ -1,65 +1,33 @@
-// URL fetch categorias
-let urlCategorias = 'https://dummyjson.com/products/category-list';
+// 
 
-// recuperar elementos del DOM
+let url = 'https://dummyjson.com/products/category-list';
+
+// 
+
 let listaCategorias = document.querySelector(".categoriaslist");
 
-// fetch
-fetch(urlCategorias)
+// 
+
+fetch(url)
     .then(function (response) {
         return response.json();
+
     })
+
     .then(function (data) {
-        let html = "";
+        let categorias = data;
+        let catmod = "";
 
-        for (let i = 0; i < data.length; i++) {
-            html += `
-                <li>
-                    <a href="./category.html" class="categoriaelement">
-                        ${data[i]}
-                    </a>
-                </li>`;
+        for (let i = 0; i < categorias.length; i++) {
+            const element = categorias[i];
+            catmod += `<li><a href="./category.html?id=${element.id}" class="categoriaelement">${element}</a></li>`
+
+
+            listaCategorias.innerHTML = catmod;
+
         }
-
-        listaCategorias.innerHTML = html;
-    })
-    .catch(function (error) {
-        console.log("Error: " + error);
-
     })
 
-
-// URL Fetch productos
-let urlProductos = `https://dummyjson.com/products/category/smartphones`;
-
-// recuperar elementos del DOM
-let listaProductos = document.querySelector(".categoryList");
-
-// fetch
-fetch(urlProductos)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        let productos = data.products;
-        let smartPhones = "";
-
-        for (let i = 0; i < productos.length; i++) {
-            let p = productos[i];
-
-            smartPhones += `
-                <article class="portada">
-                    <p>${p.title}</p>
-                    <a href="./product.html?id=${p.id}">
-                        <img src="${p.images[0]}" alt="${p.title}">
-                    </a>
-                    <p class="descripcion">${p.description}</p>
-                    <p class="precio">$${p.price}</p>
-                </article>
-            `;
-        }
-        listaProductos.innerHTML = smartPhones;
-    })
     .catch(function (error) {
         console.log("Error: " + error);
 
