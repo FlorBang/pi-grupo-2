@@ -71,6 +71,18 @@
     font-size: large;
 }
 
+.logout{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.saludo{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
 /* estilos registro */
 
 #bodyregister {
@@ -84,7 +96,6 @@
     width: 450px;
     margin: 10px;
 }
-
 
 .textoRegister {
     font-size: larger;
