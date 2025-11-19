@@ -14,7 +14,7 @@
         <a href="./index.html" class="borderLogo"><img src="./img/logo.png" alt="logo" class="logoheader"></a>
 
         <form action="./search-results.html" method="get" class="searchsection">
-            <div><input type="text" name="buscar" placeholder="Buscar..." class="searchbox" required></div>
+            <div><input type="text" name="buscar" placeholder="Buscar..." class="searchbox"></div>
             <div><button type="submit" class="btnsearch">Buscar</button></div>
         </form>
 
@@ -41,9 +41,11 @@
             </nav>
         </aside>
 
-        <h1 class="tituloResultados"></h1>
+        <section class="seccionProductos">
+            <h1 class="tituloResultados"></h1>
 
-        <section class="searchResults"></section>
+            <section class="masVendidos"></section>
+        </section>
 
 
     </main>
@@ -62,6 +64,7 @@
     <script src="./js/saludo.js"></script>
     <script src="./js/search-results.js"></script>
     <script src="./js/logout.js"></script>
+    <script src="./js/validacionSearch.js"></script>
 </body>
 
 </html>
