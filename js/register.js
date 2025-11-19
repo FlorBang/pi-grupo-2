@@ -36,6 +36,7 @@ fetch(url)
 
 let formulario = document.querySelector(".formlogyreg");
 let camposForm = document.querySelectorAll(".camposForm");
+let termsycondiciones = document.querySelector(".terms")
 
 console.log(camposForm);
 
@@ -56,6 +57,8 @@ formulario.addEventListener('submit', function (event) {
         return;
     }
 
+    if ()
+
     else if (camposForm[1].value != camposForm[2].value) {
         alert("Las contraseñas no coinciden");
         return;
@@ -65,3 +68,5 @@ formulario.addEventListener('submit', function (event) {
 
 
 });
+
+
