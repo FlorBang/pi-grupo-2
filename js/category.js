@@ -56,7 +56,7 @@ fetch(urlProductos)
                 
                 <article class="portada">
                     
-                    <p>${p.title}</p>
+                    <h2>${p.title}</h2>
                     <img src="${p.images[0]}" alt="${p.title}">
                     <p class="descripcion">${p.description}</p>
                     <p class="precio">$${p.price}</p>

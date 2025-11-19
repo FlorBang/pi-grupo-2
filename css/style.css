@@ -313,7 +313,7 @@
 }
 
 .bannerindex {
-    background-image: url(../img/b&w\ header\ 11.jpeg);
+    background-image: url(../img/banner\ nuevo.avif);
     margin-top: 20px;
     width: 100%;
     height: 220px;
@@ -364,12 +364,12 @@
 
 .titulocat {
     color: #ffffff;
-    align-self: center;
+    text-align: center;
     font-family: Raleway;
 }
 
 .lista {
-    width: 90%;
+    width: 100%;
     align-self: center;
 }
 
@@ -378,9 +378,8 @@
     text-align: center;
     margin-bottom: 10px;
     font-family: Cormorant garam;
-    padding: 15px;
+    padding-bottom: 15px;
     font-size: large;
-    width: 100%;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -397,14 +396,11 @@
     font-weight: bold;
     display: flex;
     height: 100%;
-    width: 80%;
+    width: 100%;
+    font-size: larger;
 
 }
 
-.iconos {
-    width: 20px;
-    height: 20px;
-}
 
 .main {
     display: flex;
@@ -437,14 +433,14 @@
     margin-top: 5px;
 }
 
-.Aleatorios{
+.mobile-accessories{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.Masvendidos {
+.smartphones{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -452,7 +448,7 @@
 }
 
 .descripcion {
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -556,17 +552,21 @@
 
 .portada {
     width: 250px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 12px;
+
     padding: 16px;
     background-color: rgb(232, 217, 189);
     margin: 35px 30px 25px 20px;
     margin-right: 45px;
+    justify-content: space-between;
 }
 
-.portada h3 {
+.portada h2 {
     font-size: large;
+    text-align: center;
 }
 
 .portada img {
@@ -577,8 +577,7 @@
 .btncat {
     background-color: rgb(141, 33, 33);
     color: white;
-    display: flex;
-    justify-self: center;
+    align-self: center;
     text-decoration: none;
     font-weight: 700;
     margin-top: 20px;
@@ -685,7 +684,7 @@
         font-size: medium;
     }
 
-    .aleatoriosymasvendidos {
+    .mobileAccessories{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -695,14 +694,13 @@
 
     }
 
-    .masVendidos {
+    .smartphones {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-around;
-        margin-left: 8px;
-        margin-right: 5px;
+        margin-right: 0px;
 
     }
 
