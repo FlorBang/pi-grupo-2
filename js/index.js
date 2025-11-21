@@ -20,7 +20,7 @@ fetch(url)
 
         for (let i = 0; i < categorias.length; i++) {
             const element = categorias[i];
-            catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`
+            catmod += `<li><a href="./category.html?category=${element}" class="categoriaelement">${element}</a></li>`
             listaCategorias.innerHTML = catmod;
 
         }
