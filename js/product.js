@@ -22,8 +22,6 @@ fetch(urlAside)
             const element = categorias[i];
             catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`
             console.log(element);
-            
-
             listaCategorias.innerHTML = catmod;
 
         }

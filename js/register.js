@@ -1,5 +1,3 @@
-// 
-
 let url = 'https://dummyjson.com/products/category-list';
 
 // 
@@ -20,13 +18,9 @@ fetch(url)
 
         for (let i = 0; i < categorias.length; i++) {
             const element = categorias[i];
-            catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`
-            console.log(element);
-
-
-            listaCategorias.innerHTML = catmod;
-
+            catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`;
         }
+        listaCategorias.innerHTML = catmod;
     })
 
     .catch(function (error) {
@@ -37,8 +31,13 @@ fetch(url)
 let formulario = document.querySelector(".formlogyreg");
 let camposForm = document.querySelectorAll(".camposForm");
 let termsycondiciones = document.querySelector(".terms")
+let termino = false
 
 console.log(camposForm);
+
+termsycondiciones.addEventListener('click', function () {
+    termino = true;
+});
 
 formulario.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -57,16 +56,18 @@ formulario.addEventListener('submit', function (event) {
         return;
     }
 
-    if ()
+    else if (termino == false) {
+        alert("Debe aceptar los términos y condiciones");
+        return;
+    }
 
     else if (camposForm[1].value != camposForm[2].value) {
         alert("Las contraseñas no coinciden");
         return;
+
     } else {
         this.submit()
     }
-
-
 });
 
 

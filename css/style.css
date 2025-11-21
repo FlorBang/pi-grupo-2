@@ -12,17 +12,25 @@
 .formlogyreg {
     display: flex;
     justify-content: center;
+    align-self: center;
     align-items: center;
     flex-direction: column;
     padding: 3%;
     font-size: larger;
     background-color: #3b0a0f;
     border-radius: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin: 200px;
     border-style: double;
     border-color: black;
     border-width: 15px;
+    height: 1150px;
+    width: 750px;
+    
+}
+
+.formlogyreg div{
+    padding: 20px;
+    
 }
 
 #bienvenido {
@@ -32,12 +40,18 @@
 
 .logologin {
     border-radius: 100%;
-    height: 200px
+    height: 150px;
+    width: 150px;
+    
 }
 
-.formlogyreg input {
+
+
+.camposForm{
     font-size: larger;
     background-color: #edecea;
+    width: 419px;
+    height: 38px;
 }
 
 .btn {
@@ -51,8 +65,9 @@
     font-weight: 700;
     margin-top: 20px;
     padding: 10px;
-    width: 100%;
+    width: 300px;
     font-size: large;
+    height: 50px;
 }
 
 .btnlogyreg {
@@ -69,6 +84,7 @@
     padding: 10px;
     width: 100%;
     font-size: large;
+    height: 50px;
 }
 
 .logout{
@@ -279,7 +295,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 40px;
+    justify-content: center;
 }
 
 /* estilos generales de todas las páginas e index.*/
@@ -290,6 +306,7 @@
 
 .logoheader {
     height: 120px;
+    width: 120px;
     border-radius: 100%;
     align-self: center;
     margin-left: 10px;
@@ -315,20 +332,6 @@
     margin-right: 5px;
 }
 
-.bannerindex {
-    background-image: url(../img/banner\ nuevo.avif);
-    margin-top: 20px;
-    width: 100%;
-    height: 220px;
-    margin-bottom: 3%;
-}
-
-.bannerindex h1 {
-    padding: 12px 124px;
-    font-weight: 900;
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
-}
 
 .navheader{
     align-self: center;
@@ -359,11 +362,14 @@
     align-items: flex-start;
     background-color: #3b0a0f;
     width: 20%;
+    margin: 10px;
     border-style: double;
     border-color: black;
     border-width: 15px;
     height: 100%;
 }
+
+
 
 .titulocat {
     color: #ffffff;
@@ -382,10 +388,11 @@
     margin-bottom: 10px;
     font-family: Cormorant garam;
     padding-bottom: 15px;
+    padding-top: 15px;
     font-size: large;
     list-style-type: none;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .categoriaslist {
@@ -418,15 +425,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 76%;
+    justify-content: space-around;
 }
 
 .seccionProductos {
     width: 76%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    align-content: center;
     margin-right: 0px;
+    justify-items: center;
+    
+    
 }
 
 .seccionProductos h2 {
@@ -438,16 +447,17 @@
 
 .mobile-accessories{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    
 }
 
 .smartphones{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around
+    
 }
 
 .descripcion {
@@ -515,7 +525,7 @@
 .banner {
     width: 100%;
     height: 220px;
-    background-image: url(../img/Banner\ category.png);
+    background-image: url(../img/new\ banner.png);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -559,7 +569,6 @@
     flex-direction: column;
     background: white;
     border-radius: 12px;
-
     padding: 16px;
     background-color: rgb(232, 217, 189);
     margin: 35px 30px 25px 20px;
@@ -573,9 +582,12 @@
 }
 
 .portada img {
-    width: 100%;
+    width: 80%;
+    align-self: center;
     height: auto;
 }
+
+ 
 
 .btncat {
     background-color: rgb(141, 33, 33);
@@ -596,6 +608,7 @@
     .main {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .header {
@@ -603,6 +616,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+       
+        
     }
 
     .navheader {
@@ -610,7 +625,7 @@
         font-size: xx-small;
         justify-content: center;
         width: 100%;
-        justify-content: space-between;
+        
         display: flex;
     }
 
@@ -625,35 +640,40 @@
         font-size: small;
     }
 
-    .bannerindex{
+    .banner{
         display: none;
     }
   
     .searchsection {
-        width: 80%;
+        width: 88%;
         display: flex;
         flex-wrap: nowrap;
-        height: 50px;
+        height: 30px;
         align-self: center;
         margin-top: 10px;
         padding: 0px;
-        margin: 0px;
+        margin-left: 5px;
     }
 
+    
+
     .logoheader {
-        width: 150%;
+        width: 25px;
         height: auto;
-        margin-right: 10px;
+        padding: 0;
+        margin-top: 15px;
     }
 
     .borderLogo {
-        width: 10%;
+    width: fit-content;
+
+
     }
 
     .searchbox {
         width: 230px;
         font-size: small;
-        height: 40px;
+        height: 20px;
     }
 
     .btnsearch {
@@ -662,20 +682,16 @@
         text-align: center;
         padding: 5px;
         margin-left: 5px;
-        height: 48px;
+        height: 30px;
     }
 
     .logYRegHeader {
        margin-right: 2px;
     }
 
-    .bannerindex h1 {
-        font-size: small;
-        text-align: center;
-        background-color: #927975;
-    }
+ 
 
-    .bannerindex {
+    .banner {
         height: fit-content;
     }
 
@@ -752,6 +768,7 @@
 
     .lista li {
         padding-bottom: 3px;
+
     }
 
     .navegador {
@@ -761,6 +778,8 @@
         border-style: double;
         border-width: 8px;
         margin-top: 5px;
+        display: flex;
+        flex-direction: column;
        
     }
 
@@ -773,7 +792,6 @@
 
 
     .categoriaelement {
-        padding-right: 5px;
         margin-bottom: 10px;
         height: 15px;
         width: 100%;
@@ -790,13 +808,19 @@
         text-decoration: none;
         color: rgb(152, 29, 29);
         font-weight: bold;
-        width: 50%;
+        width: 100%;
     }
 
     .categoriaslist {
         display: flex;
         flex-direction: column;
     }
+
+    .categoryList{
+        justify-content: center;
+
+    }
+   
 
     .banner {
         height: 80px;
@@ -854,15 +878,21 @@
     }
 
     .formlogyreg {
-        width: 70%;
+        width: 90%;
         height: fit-content;
         padding: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     .formlogyreg input {
         font-size: large;
+        
+    }
+
+    .camposForm{
+        width: 320px;
     }
 
     .btnlogyreg {

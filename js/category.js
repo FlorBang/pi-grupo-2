@@ -32,10 +32,11 @@ fetch(url)
 let params = new URLSearchParams(location.search);
 let categoriaSeleccionada = params.get("category");
 
-document.querySelector(".genre").innerText = categoriaSeleccionada.toUpperCase();
+document.querySelector(".genre").innerText = categoriaSeleccionada;
 
 // fetch URL productos según categoria
 let urlProductos = `https://dummyjson.com/products/category/${categoriaSeleccionada}`;
+console.log(urlProductos)
 
 let listaProductos = document.querySelector(".categoryList");
 
