@@ -79,13 +79,14 @@ fetch(url)
 
     
 
-let formulario = document.querySelector(".searchsection");
+// validación search-results
+let search = document.querySelector(".searchsection");
 
-if (formulario) {
+if (search) {
 
     let camposForm = document.querySelectorAll(".searchbox");
 
-    formulario.addEventListener("submit", function (event) {
+    search.addEventListener("submit", function (event) {
         event.preventDefault();
 
         for (let i = 0; i < camposForm.length; i++) {
@@ -107,3 +108,5 @@ if (formulario) {
         this.submit();
     });
 }
+
+
