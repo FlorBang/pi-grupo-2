@@ -36,6 +36,7 @@ fetch(urlAside)
 
 let formulario = document.querySelector(".formlogyreg");
 let camposForm = document.querySelectorAll(".camposForm");
+let password = document.querySelector("#password");
 
 console.log(camposForm);
 
@@ -52,7 +53,8 @@ formulario.addEventListener('submit', function (event) {
     }
 
     if (camposForm[1].value.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres");
+        password.value = "";
+        password.placeholder = "Ingrese al menos 6 caracteres";
         return;
     }
 

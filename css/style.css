@@ -912,20 +912,11 @@
         margin: 0%;
     }
 
-
-
-    .logologin {
-        width: 35%;
-        height: auto;
-
-    }
-
     .btn {
         width: 100%;
         height: 40px;
         font-size: small;
     }
-
 
     .textoRegister {
         font-size: larger;
