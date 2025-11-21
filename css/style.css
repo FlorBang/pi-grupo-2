@@ -248,6 +248,11 @@
     margin: 10px;
 }
 
+.categoria{
+    text-decoration: none;
+    color: black;
+}
+
 /* estilos search */
 
 #bodysearch {

@@ -56,7 +56,7 @@ formulario.addEventListener('submit', function (event) {
         return;
     }
 
-    // session storage
+    // local storage
     let user = {
         email: this.email.value,
         password: this.password.value

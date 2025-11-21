@@ -1,5 +1,3 @@
-// ya funciona y está en linkeado en todos los html
-
 let data = localStorage.getItem("miClave");
 
 let dataObj = JSON.parse(data);
@@ -13,5 +11,3 @@ if (dataObj) {
     lista.innerHTML = ` <li><p class="saludo">Bienvenido ${dataObj.email}</p></li>
                         <li><a class="logout" href="./index.html">Logout</a></li>`;
 }
-
-
