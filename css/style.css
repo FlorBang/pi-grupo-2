@@ -45,6 +45,25 @@
     
 }
 
+#emailError{
+    color: #626262;
+    font-weight: bold;
+}
+
+#passwordError{
+    color: #626262;
+    font-weight: bold;
+}
+
+#otraPasswordError{
+    color: #626262;
+    font-weight: bold;
+}
+
+#tycError{
+    color: #626262;
+    font-weight: bold;
+}
 
 
 .camposForm{

@@ -14,7 +14,8 @@
         <a href="./index.html" class="borderLogo"><img src="./img/nuevologo.png" alt="logo" class="logoheader"></a>
 
         <form action="./search-results.html" method="get" class="searchsection">
-            <div><input type="text" name="buscar" placeholder="Buscar productos, marcas y más..." class="searchbox"></div>
+            <div><input type="text" name="buscar" placeholder="Buscar productos, marcas y más..." class="searchbox">
+            </div>
             <div><button type="submit" class="btnsearch">Buscar</button></div>
         </form>
 
@@ -47,19 +48,28 @@
             <form action="./login.html" method="get" class="formlogyreg">
 
                 <img src="./img/nuevologo.png" alt="logo de la marca" class="logologin">
-                <p class="textoRegister">¡Sumate a nuestra comunidad!</p>
-                <div><input type="email" name="mail" placeholder="Ingrese su email" class="camposForm"></div>
 
-                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña" class="camposForm">
+                <p class="textoRegister">¡Sumate a nuestra comunidad!</p>
+
+                <div><input type="email" name="mail" placeholder="Ingrese su email" class="camposForm" value="" id="email">
+                </div>
+                <p id="emailError"></p>
+
+                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña" class="camposForm" id="password">
+                </div>
+                <p id="passwordError"></p>
+
+                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña nuevamente" class="camposForm" id="otraPassword">
+                </div>
+                <p id="otraPasswordError"></p>
+
+                <div><input type="checkbox" name="terminosycondicioens" value="" class="terms"><label class="condiciones" id="tyc">Acepto los términos y condiciones</label>
+                </div>
+                <p id="tycError"></p>
+
+                <div><button type="submit" class="btn">Registrarme</button>
                 </div>
 
-                <div><input type="password" name="contraseña" placeholder="Ingrese su contraseña nuevamente"
-                        class="camposForm"></div>
-
-                <div><button type="submit" class="btn">Registrarme</button></div>
-
-                <div><input type="checkbox" name="terminosycondicioens" value="acepto" class="terms"><label
-                        class="condiciones">Acepto los términos y condiciones</label></div>
 
                 <div><a href="./login.html" class="btnlogyreg">Ya tengo cuenta</a></div>
             </form>
@@ -80,6 +90,7 @@
     <script src="./js/saludo.js"></script>
     <script src="./js/logout.js"></script>
     <script src="./js/validacionSearch.js"></script>
+    <script src="./js/aside.js"></script>
 </body>
 
 </html>

@@ -1,43 +1,14 @@
-let url = 'https://dummyjson.com/products/category-list';
-
-// 
-
-let listaCategorias = document.querySelector(".categoriaslist");
-
-// 
-
-fetch(url)
-    .then(function (response) {
-        return response.json();
-
-    })
-
-    .then(function (data) {
-        let categorias = data;
-        let catmod = "";
-
-        for (let i = 0; i < categorias.length; i++) {
-            const element = categorias[i];
-            catmod += `<li><a href="./category.html?category=${element.category}" class="categoriaelement">${element}</a></li>`;
-        }
-        listaCategorias.innerHTML = catmod;
-    })
-
-    .catch(function (error) {
-        console.log("Error: " + error);
-
-    })
-
 let formulario = document.querySelector(".formlogyreg");
 let camposForm = document.querySelectorAll(".camposForm");
-let termsycondiciones = document.querySelector(".terms")
-let termino = false
+let termsycondiciones = document.querySelector(".terms");
+let otraPassword = document.querySelector("#otraPassword");
 
-console.log(camposForm);
+let mjemail = document.querySelector("#emailError");
+let mjepass = document.querySelector("#passwordError");
+let mjepass2 = document.querySelector("#otraPasswordError");
+let mjeterms = document.querySelector("#tycError");
 
-termsycondiciones.addEventListener('click', function () {
-    termino = true;
-});
+
 
 formulario.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -46,27 +17,60 @@ formulario.addEventListener('submit', function (event) {
         const element = camposForm[index];
 
         if (element.value === "") {
-            element.placeholder = "Complete este campo";
+
+            let elementoDOM = document.querySelector(`#${element.id}Error`)
+            elementoDOM.style.display = "block";
+            elementoDOM.innerText = `Complete este campo`;
             return;
         }
     }
 
+   
+
     if (camposForm[1].value.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres");
+         mjepass.style.display = "block";
+        mjepass.innerText = `Ingrese al menos 6 caracteres`;
         return;
     }
 
-    else if (termino == false) {
-        alert("Debe aceptar los términos y condiciones");
+     if (camposForm[2].value.length < 6) {
+        mjepass2.style.display = "block";
+        mjepass2.innerText = `Ingrese al menos 6 caracteres`;
         return;
     }
+
+   else if (termsycondiciones.checked==false) {
+        mjeterms.innerText = `Debe aceptar los términos y condiciones`;
+        return;
+   }
 
     else if (camposForm[1].value != camposForm[2].value) {
-        alert("Las contraseñas no coinciden");
+        mjepass2.style.display = "block";
+        mjepass2.innerText = `Las contraseñas deben coincidir`;
         return;
 
     } else {
+        
         this.submit()
     }
 });
 
+formulario.mail.addEventListener('input', function () {
+    mjemail.style.display = "none";
+
+});
+
+formulario.password.addEventListener('input', function () {
+    mjepass.style.display = "none";
+
+});
+
+formulario.otraPassword.addEventListener('input', function () {
+    mjepass2.style.display = "none";
+
+});
+
+formulario.terminosycondicioens.addEventListener('input', function () {
+    mjeterms.style.display = "none";
+
+});

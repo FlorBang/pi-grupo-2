@@ -1,35 +1,3 @@
-
-
-let urlCategorias = 'https://dummyjson.com/products/category-list';
-
-// recuperar elementos del DOM
-let listaCategorias = document.querySelector(".categoriaslist");
-
-// fetch
-fetch(urlCategorias)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        let html = "";
-
-        for (let i = 0; i < data.length; i++) {
-            html += `
-                <li>
-                    <a href="./category.html" class="categoriaelement">
-                        ${data[i]}
-                    </a>
-                </li>`;
-        }
-
-        listaCategorias.innerHTML = html;
-    })
-    .catch(function (error) {
-        console.log("Error: " + error);
-
-    })
-
-
 // Obtener la query string 
 let queryString = location.search;
 let qsObj = new URLSearchParams(queryString);
