@@ -29,7 +29,7 @@ formulario.addEventListener('submit', function (event) {
 
     if (camposForm[1].value.length < 6) {
          mjepass.style.display = "block";
-        mjepass.innerText = `Ingrese al menos 6 caracteres`;
+        mjepass.innerText = `La contraseña debe tener al menos 6 caracteres`;
         return;
     }
 
