@@ -18,7 +18,7 @@ fetch(url)
     })
     .then(function (data) {
         if (data.products.length === 0) {
-            tituloResultados.innerHTML = `<p>No hay resultados para la búsqueda: "${busqueda}".</p>`;
+            tituloResultados.innerHTML = `<p>No hay resultados para el término: "${busqueda}".</p>`;
             return;
         }
 

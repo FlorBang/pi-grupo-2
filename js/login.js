@@ -18,7 +18,7 @@ formulario.addEventListener('submit', function (event) {
     }
 
     else if (password.value.length < 6) {
-        mjeError.innerText = "Ingrese al menos 6 caracteres";
+        mjeError.innerText = "La contraseña debe tener al menos 6 caracteres";
         return;
     }
 

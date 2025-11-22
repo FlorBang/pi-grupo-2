@@ -35,18 +35,18 @@ formulario.addEventListener('submit', function (event) {
 
      if (camposForm[2].value.length < 6) {
         mjepass2.style.display = "block";
-        mjepass2.innerText = `Ingrese al menos 6 caracteres`;
+        mjepass2.innerText = `La contraseña debe tener al menos 6 caracteres`;
         return;
     }
 
    else if (termsycondiciones.checked==false) {
-        mjeterms.innerText = `Debe aceptar los términos y condiciones`;
+        mjeterms.innerText = `Debe aceptar términos y condiciones`;
         return;
    }
 
     else if (camposForm[1].value != camposForm[2].value) {
         mjepass2.style.display = "block";
-        mjepass2.innerText = `Las contraseñas deben coincidir`;
+        mjepass2.innerText = `Las contraseñas no coinciden`;
         return;
 
     } else {
